@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.AddClientDbBtn = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.FNameTextBox = new System.Windows.Forms.TextBox();
+            this.IdtextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.LNameTextBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.PhoneTextBox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.CompanyTextBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // AddClientDbBtn
@@ -51,19 +51,19 @@
             this.AddClientDbBtn.UseVisualStyleBackColor = true;
             this.AddClientDbBtn.Click += new System.EventHandler(this.AddClientDbBtn_Click);
             // 
-            // textBox1
+            // FNameTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 76);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(212, 20);
-            this.textBox1.TabIndex = 1;
+            this.FNameTextBox.Location = new System.Drawing.Point(12, 76);
+            this.FNameTextBox.Name = "FNameTextBox";
+            this.FNameTextBox.Size = new System.Drawing.Size(212, 20);
+            this.FNameTextBox.TabIndex = 1;
             // 
-            // textBox2
+            // IdtextBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(12, 29);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 2;
+            this.IdtextBox.Location = new System.Drawing.Point(12, 29);
+            this.IdtextBox.Name = "IdtextBox";
+            this.IdtextBox.Size = new System.Drawing.Size(100, 20);
+            this.IdtextBox.TabIndex = 2;
             // 
             // label1
             // 
@@ -92,12 +92,12 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Last Name:";
             // 
-            // textBox3
+            // LNameTextBox
             // 
-            this.textBox3.Location = new System.Drawing.Point(12, 121);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(212, 20);
-            this.textBox3.TabIndex = 6;
+            this.LNameTextBox.Location = new System.Drawing.Point(12, 121);
+            this.LNameTextBox.Name = "LNameTextBox";
+            this.LNameTextBox.Size = new System.Drawing.Size(212, 20);
+            this.LNameTextBox.TabIndex = 6;
             // 
             // label4
             // 
@@ -108,12 +108,12 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "Phone Number";
             // 
-            // textBox4
+            // PhoneTextBox
             // 
-            this.textBox4.Location = new System.Drawing.Point(12, 162);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(212, 20);
-            this.textBox4.TabIndex = 8;
+            this.PhoneTextBox.Location = new System.Drawing.Point(12, 162);
+            this.PhoneTextBox.Name = "PhoneTextBox";
+            this.PhoneTextBox.Size = new System.Drawing.Size(212, 20);
+            this.PhoneTextBox.TabIndex = 8;
             // 
             // label5
             // 
@@ -124,28 +124,28 @@
             this.label5.TabIndex = 9;
             this.label5.Text = "Company";
             // 
-            // textBox5
+            // CompanyTextBox
             // 
-            this.textBox5.Location = new System.Drawing.Point(11, 205);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(212, 20);
-            this.textBox5.TabIndex = 10;
+            this.CompanyTextBox.Location = new System.Drawing.Point(11, 205);
+            this.CompanyTextBox.Name = "CompanyTextBox";
+            this.CompanyTextBox.Size = new System.Drawing.Size(212, 20);
+            this.CompanyTextBox.TabIndex = 10;
             // 
             // AddClientForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(235, 280);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.CompanyTextBox);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.PhoneTextBox);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.LNameTextBox);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.IdtextBox);
+            this.Controls.Add(this.FNameTextBox);
             this.Controls.Add(this.AddClientDbBtn);
             this.Name = "AddClientForm";
             this.Text = "AddClientForm";
@@ -157,15 +157,15 @@
         #endregion
 
         private System.Windows.Forms.Button AddClientDbBtn;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox FNameTextBox;
+        private System.Windows.Forms.TextBox IdtextBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox LNameTextBox;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox PhoneTextBox;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox CompanyTextBox;
     }
 }

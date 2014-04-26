@@ -13,7 +13,7 @@ namespace Freelancr
 {
     public partial class MainForm : Form
     {
-        List<Client> ClientList = new List<Client>();
+        Dictionary<int, Client> ClientCache = new Dictionary<int, Client>();
         DatabaseConnector _connection = new DatabaseConnector();
 
         public MainForm()
@@ -29,9 +29,8 @@ namespace Freelancr
             {
                 MessageBox.Show(e.ToString());
             }
-            
-            ClientList = _connection.LoadClientList();
-            listBox1.DataSource = ClientList;
+
+            LoadClientData();
         }
 
         private void AddClientBtn_Click(object sender, EventArgs e)
@@ -43,7 +42,13 @@ namespace Freelancr
 
         public void LoadClientData()
         {
-
+            ClientCache = _connection.LoadClientList();
+            foreach (KeyValuePair<int, Client> item in ClientCache)
+            {
+                //build client name
+                string fullname = item.Value.fname + " " + item.Value.lname;
+                listBox1.Items.Add(fullname);
+            }
         }
     }
 }

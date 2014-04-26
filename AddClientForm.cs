@@ -20,7 +20,9 @@ namespace Freelancr
         private void AddClientDbBtn_Click(object sender, EventArgs e)
         {
             DatabaseConnector _con = new DatabaseConnector();
-            _con.AddClient(textBox1.ToString(), textBox2.ToString(), textBox3.ToString(), textBox4.ToString(), textBox5.ToString());
+            //convert textbox to int
+            _con.AddClient(Convert.ToInt32(IdtextBox.Text), FNameTextBox.Text, LNameTextBox.Text, PhoneTextBox.Text, CompanyTextBox.Text);
+            this.Close();
             //_con.ExecuteSQLNonQuery();
         }
     }
