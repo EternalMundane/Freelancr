@@ -22,8 +22,8 @@ namespace Freelancr
             DatabaseConnector _con = new DatabaseConnector();
             //convert textbox to int
             _con.AddClient(Convert.ToInt32(IdtextBox.Text), FNameTextBox.Text, LNameTextBox.Text, PhoneTextBox.Text, CompanyTextBox.Text);
-            this.Close();
             //_con.ExecuteSQLNonQuery();
+            this.Close();
         }
     }
 }

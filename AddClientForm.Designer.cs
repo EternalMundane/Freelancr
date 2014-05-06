@@ -46,7 +46,7 @@
             this.AddClientDbBtn.Location = new System.Drawing.Point(11, 248);
             this.AddClientDbBtn.Name = "AddClientDbBtn";
             this.AddClientDbBtn.Size = new System.Drawing.Size(212, 23);
-            this.AddClientDbBtn.TabIndex = 0;
+            this.AddClientDbBtn.TabIndex = 6;
             this.AddClientDbBtn.Text = "Add Client";
             this.AddClientDbBtn.UseVisualStyleBackColor = true;
             this.AddClientDbBtn.Click += new System.EventHandler(this.AddClientDbBtn_Click);
@@ -56,14 +56,14 @@
             this.FNameTextBox.Location = new System.Drawing.Point(12, 76);
             this.FNameTextBox.Name = "FNameTextBox";
             this.FNameTextBox.Size = new System.Drawing.Size(212, 20);
-            this.FNameTextBox.TabIndex = 1;
+            this.FNameTextBox.TabIndex = 2;
             // 
             // IdtextBox
             // 
             this.IdtextBox.Location = new System.Drawing.Point(12, 29);
             this.IdtextBox.Name = "IdtextBox";
             this.IdtextBox.Size = new System.Drawing.Size(100, 20);
-            this.IdtextBox.TabIndex = 2;
+            this.IdtextBox.TabIndex = 1;
             // 
             // label1
             // 
@@ -97,7 +97,7 @@
             this.LNameTextBox.Location = new System.Drawing.Point(12, 121);
             this.LNameTextBox.Name = "LNameTextBox";
             this.LNameTextBox.Size = new System.Drawing.Size(212, 20);
-            this.LNameTextBox.TabIndex = 6;
+            this.LNameTextBox.TabIndex = 3;
             // 
             // label4
             // 
@@ -113,7 +113,7 @@
             this.PhoneTextBox.Location = new System.Drawing.Point(12, 162);
             this.PhoneTextBox.Name = "PhoneTextBox";
             this.PhoneTextBox.Size = new System.Drawing.Size(212, 20);
-            this.PhoneTextBox.TabIndex = 8;
+            this.PhoneTextBox.TabIndex = 4;
             // 
             // label5
             // 
@@ -129,7 +129,7 @@
             this.CompanyTextBox.Location = new System.Drawing.Point(11, 205);
             this.CompanyTextBox.Name = "CompanyTextBox";
             this.CompanyTextBox.Size = new System.Drawing.Size(212, 20);
-            this.CompanyTextBox.TabIndex = 10;
+            this.CompanyTextBox.TabIndex = 5;
             // 
             // AddClientForm
             // 

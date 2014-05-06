@@ -10,8 +10,6 @@ namespace Freelancr
 {
     class DatabaseConnector
     {
-        public SQLiteConnection m_connection = new SQLiteConnection("Data Source=ClientDatabase.sqlite;Version=3;");
-
         public void GenerateSQLDatabase()
         {
             using (var con = new SQLiteConnection("Data Source=ClientDatabase.sqlite;Version=3;"))
@@ -42,8 +40,9 @@ namespace Freelancr
                         cmd.Parameters.AddWithValue("@Phone", phone);
                         cmd.Parameters.AddWithValue("@Business", company);
                         cmd.ExecuteNonQuery();
-                        con.Close();
                     }
+                    con.Close();
+                    
                 }
                 catch (Exception e)
                 {
